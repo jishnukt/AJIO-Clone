@@ -206,16 +206,14 @@ ul {
         display: none;
     }
     .sortbar{
-        justify-content:space-between;
+        justify-content:space-evenly;
+        /* margin-left: 30px; */
         }
-    .flexb{
-        justify-content: center;
-    }
     .link{
         display: none;
     }
     .content{
-        margin-left: 80px;
+        margin-left: 40px;
     }
     .sidebar{
         display: none;
@@ -223,22 +221,15 @@ ul {
     .footer{
         margin-top: 7800px;
     }
-    .search{
-        justify-content: center;
-        margin: 0;
+    .found{
+        display: none;
+    }
+    #dropdown{
+        margin-left: 80px;
+    }
 
-    }
-    .icon{
-        justify-content: center;
-        margin: 0;
-    }
-    .menu{
-        /* display: flex; */
-        justify-content: center;
-        margin-top: 30px;
-        margin-left: 0px;
 
-    }
+
   }
   @media screen and (min-width: 1562px) {
     .menu{
