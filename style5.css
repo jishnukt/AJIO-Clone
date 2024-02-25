@@ -166,3 +166,83 @@ ul {
     background-color: red;
     width: 100%;
 }
+@media screen and (max-width: 1060px) {
+   .hover1{
+    display: none;
+   }
+   .footer{
+    margin-top: 4100px;
+   }
+   .grid1{
+    /* width: 300px; */
+    
+   }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+  .grid1{
+   width: 27vw; 
+    
+   } 
+    .prod1{
+    padding:30px
+    
+    /* display: none; */
+   } 
+}
+@media screen and (max-width: 767px) {
+    header{
+        display: none;
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    .img{
+        display:none;
+    }
+    .grid{
+        display: none;
+    }
+    .sort{
+        display: none;
+    }
+    .sortbar{
+        justify-content:space-between;
+        }
+    .flexb{
+        justify-content: center;
+    }
+    .link{
+        display: none;
+    }
+    .content{
+        margin-left: 80px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .footer{
+        margin-top: 7800px;
+    }
+    .search{
+        justify-content: center;
+        margin: 0;
+
+    }
+    .icon{
+        justify-content: center;
+        margin: 0;
+    }
+    .menu{
+        /* display: flex; */
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 0px;
+
+    }
+  }
+  @media screen and (min-width: 1562px) {
+    .menu{
+        margin-left: 200px;
+    }
+
+  }
