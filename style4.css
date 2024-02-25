@@ -1,0 +1,140 @@
+.flexb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    gap:20px;
+    padding-top:20px;
+    width: 100%;
+}
+.grid1{.flexb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    gap:20px;
+    padding-top:20px;
+    cursor: pointer;
+    width: 100%;
+}
+.grid1{
+    height: 512px;
+    box-sizing: border-box;
+}
+.prod1{
+    height: 379px;
+    width: 303px;
+    /* height: 10px; */
+}
+.text{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 6px;
+    gap: 6px;
+    
+
+    /* margin-top: 20px; */
+}
+.prname{
+    font-size: 14px;
+    font-weight:500;
+    font-family: 'lora';
+    color:#333333
+}
+.prtype{
+    font-family: 'lora';
+    font-size: 14px;
+}
+.prbtn{
+    background-color: green;
+    min-width: 58px;
+    height: 25px;
+    border-radius: 4px;
+    color: white;
+    border: 0;
+}
+.prcomp{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Tailer';
+    color:#866528
+}
+.prprice{
+    font-family: 'Tailer';
+    font-size: 14px;
+
+}
+.proffer{
+    color: green;
+    font-family: 'Tailer';
+    font-size: 12px;
+    font-weight: bold;
+}
+.proffer,.prprice,.prbtn,.prtype,.prname,.prcomp{
+    margin-bottom:6px;
+
+}
+    /* width: calc(33.33% - 10px); */
+    /* margin: 5px; */
+    height: 512px;
+    /* background-color: #f0f0f0; */
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+.prod1{
+    height: 379px;
+    width: 303px;
+    /* height: 10px; */
+}
+.text{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 6px;
+    gap: 6px;
+
+    /* margin-top: 20px; */
+}
+.prname{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Tailer';
+    color:#866528;
+}
+.prtype{
+    font-family: 'lora';
+    font-size: 14px;
+}
+.prbtn{
+    background-color: green;
+    min-width: 58px;
+    height: 25px;
+    border-radius: 4px;
+    color: white;
+    border: 0;
+}
+.prprice{
+    font-family: 'Tailer';
+    font-size: 14px;
+
+}
+.proffer{
+    color: green;
+    font-family: 'Tailer';
+    font-size: 14px;
+}
+#ver20:checked{
+background-color: red;
+color: red;
+}
