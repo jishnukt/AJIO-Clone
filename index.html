@@ -96,62 +96,75 @@
         <div class="sidecontent">
             <p class="d2c">Home  /  D2C Fashion</p>
         </div>
-        <div class="up1">            
-            <div class="dropdown-icon" onclick="toggleDropdown()">&#x2b; &nbsp;&nbsp;Gender</div>
+        <div class="up1">
+            <div class="refineby">
+                <div class="dropdown-section" onclick="toggleAllDropdowns()">Refine By</div>
+                <div class="arrow">&#8963;</div>           
+            </div> 
+            <div class="dropdown-icon" id="dropdown-icon" onclick="toggleDropdown()">&#x2b; &nbsp;&nbsp;Gender</div>
                 <div class="dropdown-menu" id="myDropdown">
                         <input type="checkbox" id="ver10" class="dropdown-checkbox">
-                        <label for="option1" class="dropdown-label"><span class="dropdown-icon"></span>Girls (92,134)</label><br>
+                        <label for="option1" class="dropdown-label"><span class="dropdown-icon"></span>Girls (92,134)<br></label><br>
                         <input type="checkbox" id="ver11" class="dropdown-checkbox">
-                        <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>Boys (75,489)</label><br>
+                        <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>Boys (75,489)<br></label><br>
                         <input type="checkbox" id="ver12" class="dropdown-checkbox">
-                        <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Infants (15,266)</label><br>
+                        <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Infants (15,266)<br></label><br>
                         <input type="checkbox" id="ver13" class="dropdown-checkbox">
-                        <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Women (293)</label><br>
+                        <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Women (293)<br></label><br>
                         <input type="checkbox" id="ver14" class="dropdown-checkbox">
-                        <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Junior Boys (46)</label><br>
+                        <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Junior Boys (46)<br></label><br>
                 </div>
-            <div class="dropdown-icon2" onclick="toggleDropdown2()">&#x2b; &nbsp;&nbsp; Price</div>
+            <div class="dropdown-icon2" id="dropdown-icon2" onclick="toggleDropdown2()">&#x2b; &nbsp;&nbsp; Price</div>
             <div class="dropdown-menu2" id="myDropdown2">
             <input type="checkbox" id="ver5" class="dropdown-checkbox">
-            <label id="f500" for="option1" class="dropdown-label"><span class="dropdown-icon" ></span>Below Rs.500 (1,555)</label><br>
+            <label id="f500" for="option1" class="dropdown-label"><span class="dropdown-icon" ></span>Below Rs.500 (1,555)<br></label><br>
             <input type="checkbox" id="ver6" class="dropdown-checkbox">
-            <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>Rs.500-1000 (4,891)</label><br>
+            <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>Rs.500-1000 (4,891)<br></label><br>
             <input type="checkbox" id="ver7" class="dropdown-checkbox">
-            <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Rs.1001-1500 (1,367)</label><br>
+            <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Rs.1001-1500 (1,367)<br></label><br>
             <input type="checkbox" id="ver8" class="dropdown-checkbox">
-            <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Rs.1501-2000 (232)</label><br>
+            <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Rs.1501-2000 (232)<br></label><br>
             <input type="checkbox" id="ver9" class="dropdown-checkbox">
-            <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Rs.2001-2500 (32)</label><br>
+            <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Rs.2001-2500 (32)<br></label><br>
             </div>
-                <div class="dropdown-icon3" onclick="toggleDropdown3()">&#x2b; &nbsp;&nbsp; Category</div>
+                <div class="dropdown-icon3" id="dropdown-icon3" onclick="toggleDropdown3()">&#x2b; &nbsp;&nbsp; Category</div>
                 <div class="dropdown-menu3" id="myDropdown3">
                 <input type="checkbox" id="ver15" class="dropdown-checkbox">
-                <label for="option1" class="dropdown-label"><span class="dropdown-icon"></span>Tshirts (35,787)</label><br>
+                <label for="option1" class="dropdown-label"><span class="dropdown-icon"></span>Tshirts (35,787)<br></label><br>
                 <input type="checkbox" id="ver16" class="dropdown-checkbox">
-                <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>Frocks (16,787)</label><br>
+                <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>Frocks (16,787)<br></label><br>
                 <input type="checkbox" id="ver17" class="dropdown-checkbox">
-                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Sweaters (16,016)</label><br>
+                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Sweaters (16,016)<br></label><br>
                 <input type="checkbox" id="ver18" class="dropdown-checkbox">
-                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Track Pants (9,737)</label><br>
+                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Track Pants (9,737)<br></label><br>
                 <input type="checkbox" id="ver19" class="dropdown-checkbox">
-                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Leggings (7,668)</label><br>
+                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>Leggings (7,668)<br></label><br>
                 </div>
-                <div class="dropdown-icon4" onclick="toggleDropdown4()">&#x2b; &nbsp;&nbsp; Brands</div>
+                <div class="dropdown-icon4" id="dropdown-icon4" onclick="toggleDropdown4()">&#x2b; &nbsp;&nbsp; Brands</div>
                 <div class="dropdown-menu4" id="myDropdown4">
                 <input type="checkbox" id="ver20" class="dropdown-checkbox">
-                <label for="option1" class="dropdown-label"><span class="dropdown-icon"></span>1188(3)</label><br>
+                <label for="option1" class="dropdown-label"><span class="dropdown-icon"></span>1188(3)<br></label><br>
                 <input type="checkbox" id="ver21" class="dropdown-checkbox">
-                <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>14 FAB (13)</label><br>
+                <label for="option2" class="dropdown-label"><span class="dropdown-icon"></span>14 FAB (13)<br></label><br>
                 <input type="checkbox" id="ver22" class="dropdown-checkbox">
-                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>2BME (1)</label><br>
+                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>2BME (1)<br></label><br>
                 <input type="checkbox" id="ver23" class="dropdown-checkbox">
-                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>2K KIDS (1)</label><br>
+                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>2K KIDS (1)<br></label><br>
                 <input type="checkbox" id="ver24" class="dropdown-checkbox">
-                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>3pin (1,272)</label><br>
+                <label for="option3" class="dropdown-label"><span class="dropdown-icon"></span>3pin (1,272)<br><br></label><br>
                 </div>
-                <div class="dropdown-icon11" onclick="toggleDropdown11()">&#x2b; &nbsp;&nbsp; Category</div>
+                <div class="dropdown-icon11" id="dropdown-icon5" onclick="toggleDropdown11()">&#x2b; &nbsp;&nbsp; Category</div>
                 <div class="dropdown-menu11" id="myDropdown11">
                 </div>
+                <div class="refineby2">
+                    <div class="dropdown-section2" onclick="toggleAllDropdowns2()">More Filters</div>
+                    <div class="arrow2">&#8963;</div>           
+                </div>
+                <div id="box">
+                    <div id="para">Please select upto 3 categories to<br> view more filters</div>
+                    <button id="butt">SELECT CATEGORY</button>
+                </div> 
+
         </div>
     </div>
     <div class="content">

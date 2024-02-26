@@ -1,3 +1,35 @@
+function toggleAllDropdowns() {
+  const genderDropdown = document.getElementById('dropdown-icon');
+  const priceDropdown = document.getElementById('dropdown-icon2');
+  const categoryDropdown = document.getElementById('dropdown-icon3');
+  const brandsDropdown = document.getElementById('dropdown-icon4');
+  genderDropdown.style.display = genderDropdown.style.display === 'none' ? 'block' : 'none';
+  priceDropdown.style.display = priceDropdown.style.display === 'none' ? 'block' : 'none';
+  categoryDropdown.style.display = categoryDropdown.style.display === 'none' ? 'block' : 'none';
+  brandsDropdown.style.display = brandsDropdown.style.display === 'none' ? 'block' : 'none';
+}
+document.addEventListener('click', function (event) {
+  if (event.target !== dropdownSection && event.target.closest('.up1') === null) {
+      genderDropdown.style.display = 'none';
+      priceDropdown.style.display = 'none';
+      categoryDropdown.style.display = 'none';
+      brandsDropdown.style.display = 'none';
+  }
+});
+
+
+
+function toggleAllDropdowns2() {
+  const genderDropdown2 = document.getElementById('box');
+  genderDropdown2.style.display = genderDropdown2.style.display === 'none' ? 'block' : 'none';
+}
+document.addEventListener('click', function (event) {
+  if (event.target !== dropdownSection && event.target.closest('.up1') === null) {
+      genderDropdown2.style.display = 'none';
+  }
+});
+
+
 
 function toggleDropdown() {
   var dropdownMenu = document.getElementById("myDropdown");
@@ -72,13 +104,6 @@ window.onclick = function(event) {
     }
   }
 }
-
-
-
-
-
-
-
 
 // #######################################################################################################3
 async function filterajio() {
@@ -243,19 +268,13 @@ filterajio();
 
 
 // ################################################################################################
-
-
-
-
 async function handleSearch() {
   const searchInput = document.getElementById('search1');
   const searchTerm = searchInput.value.toLowerCase();
-  // const response = await fetch('https://jishnukt.github.io/api/sample.json');
-        const response = await fetch('sample.json');
+  const response = await fetch('https://jishnukt.github.io/api/sample.json');
+        // const response = await fetch('sample.json');
   const products = await response.json();
   const countDisplay = document.getElementById('countDisplay');
-  
-
 
   const filteredProducts2 = products.filter(product => {
     const searchName = product.prname.toLowerCase();
@@ -268,13 +287,11 @@ async function handleSearch() {
     const compMatch = searchComp.includes(searchTerm);
     const colorMatch = searchColor.includes(searchTerm);
     const genderMatch = searchGender.includes(searchTerm);
-
     return nameMatch || typeMatch || compMatch || colorMatch || genderMatch;
   });
   countDisplay.textContent = `${filteredProducts2.length} Items Found`;
   updateDisplay(filteredProducts2);
 }
-
 function updateDisplay(filteredProducts) {
   const productContainer = document.getElementById('flexb');
   productContainer.innerHTML = '';
@@ -318,10 +335,6 @@ function updateDisplay(filteredProducts) {
     productContainer.appendChild(productDiv);
   });
 }
-
-// Attach the event listener to the input element
 const searchInput = document.getElementById('search1');
 searchInput.addEventListener('input', handleSearch);
-
-// Call handleSearch initially to load all products
 handleSearch();
