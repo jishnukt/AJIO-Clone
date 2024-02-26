@@ -307,3 +307,46 @@ height: 1000px;
 position: absolute;
 z-index: 100;
 } */
+
+
+.grid{
+
+  display: flex;
+  align-items: center;
+  
+  }
+  
+  .pattern1,.pattern2{
+  
+  /* background-color: green; */
+  
+  display: flex;
+  height: 25px;
+  border: 1px grey solid;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 4px;
+  cursor: pointer;
+
+  
+  }
+  
+  .pattern{
+  
+  height: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  
+  width: 7px;
+  
+  background-color: rgb(160, 159, 159);
+  
+  margin-right: 4px;
+  
+  }
+  .pattern1{
+    margin-left: 8px;
+  }
+  .pattern2{
+    opacity: 50%;
+  }

@@ -74,6 +74,12 @@ window.onclick = function(event) {
 }
 
 
+
+
+
+
+
+
 // #######################################################################################################3
 async function filterajio() {
   try {
@@ -234,3 +240,88 @@ async function filterajio() {
 }
 
 filterajio();
+
+
+// ################################################################################################
+
+
+
+
+async function handleSearch() {
+  const searchInput = document.getElementById('search1');
+  const searchTerm = searchInput.value.toLowerCase();
+  // const response = await fetch('https://jishnukt.github.io/api/sample.json');
+        const response = await fetch('sample.json');
+  const products = await response.json();
+  const countDisplay = document.getElementById('countDisplay');
+  
+
+
+  const filteredProducts2 = products.filter(product => {
+    const searchName = product.prname.toLowerCase();
+    const searchType = product.category.toLowerCase();
+    const searchComp = product.prcomp.toLowerCase();
+    const searchColor = product.color.toLowerCase();
+    const searchGender = product.gender.toLowerCase();
+    const nameMatch = searchName.includes(searchTerm);
+    const typeMatch = searchType.includes(searchTerm);
+    const compMatch = searchComp.includes(searchTerm);
+    const colorMatch = searchColor.includes(searchTerm);
+    const genderMatch = searchGender.includes(searchTerm);
+
+    return nameMatch || typeMatch || compMatch || colorMatch || genderMatch;
+  });
+  countDisplay.textContent = `${filteredProducts2.length} Items Found`;
+  updateDisplay(filteredProducts2);
+}
+
+function updateDisplay(filteredProducts) {
+  const productContainer = document.getElementById('flexb');
+  productContainer.innerHTML = '';
+
+  filteredProducts.forEach(product => {
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('grid1');
+
+    const productImage = document.createElement('img');
+    productImage.src = product.imgurl;
+    productImage.alt = product.prname;
+    productImage.classList.add('prod1');
+
+    const productCompElement = document.createElement('p');
+    productCompElement.classList.add('prcomp');
+    productCompElement.textContent = product.prcomp;
+
+    const productNameElement = document.createElement('p');
+    productNameElement.classList.add('prname');
+    productNameElement.textContent = product.prname;
+
+    const productRatingElement = document.createElement('button');
+    productRatingElement.classList.add('prbtn');
+    productRatingElement.textContent = `${product.prrating}`;
+
+    const productPriceElement = document.createElement('p');
+    productPriceElement.classList.add('prprice');
+    productPriceElement.textContent = `${product.prprice}`;
+
+    const productOfferElement = document.createElement('p');
+    productOfferElement.classList.add('proffer');
+    productOfferElement.textContent = `${product.proffer}`;
+
+    productDiv.appendChild(productImage);
+    productDiv.appendChild(productCompElement);
+    productDiv.appendChild(productNameElement);
+    productDiv.appendChild(productRatingElement);
+    productDiv.appendChild(productPriceElement);
+    productDiv.appendChild(productOfferElement);
+
+    productContainer.appendChild(productDiv);
+  });
+}
+
+// Attach the event listener to the input element
+const searchInput = document.getElementById('search1');
+searchInput.addEventListener('input', handleSearch);
+
+// Call handleSearch initially to load all products
+handleSearch();

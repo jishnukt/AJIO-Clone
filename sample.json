@@ -8,6 +8,7 @@
     "gender":"Boys",
     "category":"tshirts",
     "discount":60,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230901/LSWJ/64f1cf16afa4cf41f59ca0f1/gap_kids_pink_barbie_crew-neck_sweatshirt.jpg"
     },
 
@@ -20,6 +21,7 @@
     "gender":"Women",
     "category":"frocks",
     "discount":60,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230911/i5YI/64ff248fddf7791519ca0050/gap_kids_purple_barbie_organic_cotton_graphic_print_crew-neck_t-shirt.jpg"
     },
 
@@ -32,6 +34,7 @@
     "category":"tshirts",
     "gender":"Women",
     "discount":70,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20240207/feuH/65c3a20a16fd2c6e6ae682f2/gap_kids_pink_barbie_organic_cotton_round-neck_t-shirt.jpg"
     },
 
@@ -44,6 +47,7 @@
     "proffer": "Offer Price 299",
     "category":"frocks",
     "discount":50,
+    "color":"white",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230901/m3QN/64f1ce2bddf77915198f72e7/gap_kids_white_ribbed_tank_top_with_placement_emboridery.jpg"
 
     },
@@ -56,6 +60,7 @@
     "proffer": "Offer Price 799",
     "category":"sweaters",
     "discount":45,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230901/70hu/64f1d172afa4cf41f59cad67/gap_kids_pink_barbie_arch_logo_rib_tank_dress.jpg"
 
     } ,
@@ -68,6 +73,7 @@
     "proffer": "Offer Price 299",
     "category":"tshirts",
     "discount":80,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230911/u5TU/64ff5619ddf7791519ccf43f/-473Wx593H-442110207-pink-MODEL.jpg"
 
     },
@@ -81,6 +87,7 @@
     "gender":"Infants",    
     "brand":"2kkids",
     "discount":40,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230901/9nzP/64f1d2c1afa4cf41f59cb512/-473Wx593H-442110177-pink-MODEL.jpg"
 
     },
@@ -93,6 +100,7 @@
     "proffer": "Offer Price 1,299",
     "category":"sweaters",
     "discount":55,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230901/pqxT/64f1cff5afa4cf41f59ca548/-473Wx593H-442110422-pink-MODEL.jpg"
 
     },
@@ -105,6 +113,7 @@
     "gender":"Boys",
     "category":"tshirts",
     "discount":60,
+    "color":"blue",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20231125/gkgA/656122a0ddf77915199b20e0/-473Wx593H-466824916-multi-MODEL5.jpg"
     },
     {"prcomp": "2BME",
@@ -116,6 +125,7 @@
     "gender":"Women",
     "category":"tshirts",
     "discount":40,
+    "color":"white",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/h07/hcd/13989257510942/-473Wx593H-441007219-white-MODEL.jpg"
     },
     {"prcomp": "3Pin",
@@ -127,6 +137,7 @@
     "gender":"Junior",
     "category":"sweaters",
     "discount":75,
+    "color":"pink",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/hcf/h34/15439781855262/-473Wx593H-410147669-pink-MODEL.jpg"
     }
     ,{"prcomp": "14 Fab",
@@ -138,6 +149,7 @@
     "gender":"Infants",
     "category":"tshirts",
     "discount":60,
+    "color":"multicolour",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20221219/412J/63a04109aeb269659cf1f186/-473Wx593H-441704827-assorted-MODEL.jpg"
     },
     {"prcomp": "14 Fab",
@@ -149,6 +161,7 @@
     "gender":"Boys",
     "category":"track",
     "discount":60,
+    "color":"blue",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230828/VoXa/64ecc1d8afa4cf41f5910436/-473Wx593H-442110324-darkblue-MODEL.jpg"
     }
     ,{"prcomp": "3BME",
@@ -160,6 +173,7 @@
     "gender":"Girls",
     "category":"leggings",
     "discount":50,
+    "color":"orange",
     "imgurl": "https://assets.ajio.com/medias/sys_master/root/20230124/Hhi8/63cf7cd3f997dd708e1dcd48/-473Wx593H-443010259-darkred-MODEL.jpg"
     }
 ]
